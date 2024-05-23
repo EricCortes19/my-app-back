@@ -1,0 +1,143 @@
+Instalación de Node.js
+
+Ve a la página oficial de Node.js: https://nodejs.org/
+
+Descarga e instala la versión recomendada (LTS).
+
+Para verificar la instalación, abre una terminal y ejecuta los siguientes comandos:
+node -v
+npm -v
+Ejecuta el servidor del backend:
+node app.js
+
+Importante: al crear la base de datos debe llamarla: onlineMayo
+si le cambia el nombre por favor ir a al archivo 'config' y cambiar el nombre de la base de datos.
+
+
+Base de datos utilizada: SQL server 2019.
+Tambien es importante colocar seguridad de autentication usuario/contrasenia para la BD.
+la cual debera configurar cuando cree la BD y luego en el archivo 'config.js' reemplazar
+el usuario y password.
+
+Para la creacion de tablas, hay un archivo 'tablas.sql'
+hay otro archivo para poblar las tablas 'insertarDatos.sql'
+
+// el back corre el puerto 3002 configurado en el archivo 'app.js'
+el motivo porque el FRONT corre en el 3000 y fue mas rapido y facil cambiar el puerto en el back
+///Servicios configurados.....
+Resumen de Endpoints del Backend
+Clientes
+Obtener todos los clientes
+
+URL: GET /clientes
+Respuesta: Array de objetos cliente
+Obtener un cliente por ID
+
+URL: GET /clientes/:id
+Respuesta: Objeto cliente
+Crear un cliente
+
+URL: POST /clientes
+Cuerpo: JSON con datos del cliente
+Respuesta: ID del cliente creado
+Actualizar un cliente
+
+URL: PUT /clientes/:id
+Cuerpo: JSON con datos actualizados del cliente
+Respuesta: Resultado de la actualización
+Eliminar un cliente
+
+URL: DELETE /clientes/:id
+Respuesta: Resultado de la eliminación
+Productos
+Obtener todos los productos
+
+URL: GET /productos
+Respuesta: Array de objetos producto
+Obtener un producto por ID
+
+URL: GET /productos/:id
+Respuesta: Objeto producto
+Crear un producto
+
+URL: POST /productos
+Cuerpo: JSON con datos del producto
+Respuesta: ID del producto creado
+Actualizar un producto
+
+URL: PUT /productos/:id
+Cuerpo: JSON con datos actualizados del producto
+Respuesta: Resultado de la actualización
+Eliminar un producto
+
+URL: DELETE /productos/:id
+Respuesta: Resultado de la eliminación
+Ventas
+Obtener todas las ventas
+
+URL: GET /ventas
+Respuesta: Array de objetos venta
+Obtener una venta por ID
+
+URL: GET /ventas/:id
+Respuesta: Objeto venta
+Crear una venta
+
+URL: POST /ventas
+Cuerpo: JSON con datos de la venta
+Respuesta: ID de la venta creada
+Actualizar una venta
+
+URL: PUT /ventas/:id
+Cuerpo: JSON con datos actualizados de la venta
+Respuesta: Resultado de la actualización
+Eliminar una venta
+
+URL: DELETE /ventas/:id
+Respuesta: Resultado de la eliminación
+Detalle de Carrito
+Obtener todos los detalles del carrito
+
+URL: GET /detalle_carrito
+Respuesta: Array de objetos detalle del carrito
+Obtener un detalle del carrito por ID
+
+URL: GET /detalle_carrito/:id
+Respuesta: Objeto detalle del carrito
+Crear un detalle del carrito
+
+URL: POST /detalle_carrito
+Cuerpo: JSON con datos del detalle del carrito
+Respuesta: ID del detalle del carrito creado
+Actualizar un detalle del carrito
+
+URL: PUT /detalle_carrito/:id
+Cuerpo: JSON con datos actualizados del detalle del carrito
+Respuesta: Resultado de la actualización
+Eliminar un detalle del carrito
+
+URL: DELETE /detalle_carrito/:id
+Respuesta: Resultado de la eliminación
+Detalle de Ventas
+Obtener todos los detalles de ventas
+
+URL: GET /detalle_ventas
+Respuesta: Array de objetos detalle de venta
+Obtener un detalle de venta por ID
+
+URL: GET /detalle_ventas/:id
+Respuesta: Objeto detalle de venta
+Crear un detalle de venta
+
+URL: POST /detalle_ventas
+Cuerpo: JSON con datos del detalle de venta
+Respuesta: ID del detalle de venta creado
+Actualizar un detalle de venta
+
+URL: PUT /detalle_ventas/:id
+Cuerpo: JSON con datos actualizados del detalle de venta
+Respuesta: Resultado de la actualización
+Eliminar un detalle de venta
+
+URL: DELETE /detalle_ventas/:id
+Respuesta: Resultado de la eliminación
